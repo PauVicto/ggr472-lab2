@@ -1,0 +1,56 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Sidney Smith Hall",
+                "Type": "Class",
+                "Note": "GGR472, GGR360",
+                "Address": " 100 St George St, Toronto, ON M5S 3G3"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39879450601647,
+                    43.6624898734938
+                ],
+                "type": "Point"
+            },
+            "id": 0
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "South Borden Building",
+                "Type": "Class",
+                "Note": "VIS201",
+                "Address": "487 Spadina Cres, Toronto, ON M5S 2T4"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39972500000039,
+                    43.660063166168584
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Daniel's Building",
+                "Type": "Class",
+                "Note": "VIS330",
+                "Address": "1 Spadina Cres, Toronto, ON M5S 2J5"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40069954232784,
+                    43.659657642721015
+                ],
+                "type": "Point"
+            },
+            "id": 2
+        }
+    ]
+}

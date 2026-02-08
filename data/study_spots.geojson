@@ -1,0 +1,145 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Bloom Cafe",
+                "Type": "Cafe",
+                "Note": "Study spot",
+                "Address": "596 Yonge St, Toronto, ON M4Y 1Z3",
+                "marker-color": "#ff0fe3",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38500868219077,
+                    43.665477853571815
+                ],
+                "type": "Point"
+            },
+            "id": 0
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Icha Tea",
+                "Type": "Cafe",
+                "Note": "Study Spot",
+                "Address": "235 Spadina Ave. Unit 4, Toronto, ON M5T 2E2",
+                "marker-color": "#ff0fe3",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39699983575031,
+                    43.65141786529637
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Neo Coffee Bar",
+                "Type": "Cafe",
+                "Note": "Study spot ",
+                "Address": "61 Spadina Ave., Toronto, ON M5V 1K1",
+                "marker-color": "#ff0fe3",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39450623028031,
+                    43.64506593356691
+                ],
+                "type": "Point"
+            },
+            "id": 2
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Balzac's Image Arts",
+                "Type": "Cafe",
+                "Note": "Study spot",
+                "Address": "122 Bond St, Toronto, ON M5B 1X8",
+                "marker-color": "#ff0fe3",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.37914309872653,
+                    43.65738786266027
+                ],
+                "type": "Point"
+            },
+            "id": 3
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Cactus Club",
+                "Type": "Cafe",
+                "Note": "Study spot",
+                "Address": "77 Adelaide St W, Toronto, ON M5X 1C1",
+                "marker-color": "#ff0fe3",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.38218035725377,
+                    43.64941934144298
+                ],
+                "type": "Point"
+            },
+            "id": 4
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "10 Dean",
+                "Type": "Cafe",
+                "Note": "Study spot",
+                "Address": "484 Spadina Ave., Toronto, ON M5S 0E4",
+                "marker-color": "#ff0fe3",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40075535725329,
+                    43.65831533769045
+                ],
+                "type": "Point"
+            },
+            "id": 5
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name ": "Bloom Cafe",
+                "Type": "Cafe",
+                "Note": "Study spot",
+                "Address": "255 Beverley St, Toronto, ON M5T 1Z4",
+                "marker-color": "#ff0fe3",
+                "marker-size": "medium",
+                "marker-symbol": "circle"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39559607950856,
+                    43.65851933760371
+                ],
+                "type": "Point"
+            },
+            "id": 6
+        }
+    ]
+}
