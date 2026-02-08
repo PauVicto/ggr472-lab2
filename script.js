@@ -18,7 +18,7 @@ map.on('load', () => {
         'source': 'census_tracts', 
         'paint': {
             'line-color': '#0f118f', 
-            'line-width': 2
+            'line-width': 1.5
         },
         'source-layer': 'torontoct-98sxd6'
 });
