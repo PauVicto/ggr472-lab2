@@ -8,36 +8,17 @@ const map = new mapboxgl.Map({
 });
 
 map.on('load', () => {
-    // Add a data source containing GeoJSON data
-    map.addSource('uoft-data', {
+    map.addSource('buildings-data', {
         type: 'geojson',
-        data: {
-            "type": "FeatureCollection",
-            "features": [
-                {
-                    "type": "Feature",
-                    "properties": {
-                        "name": "Sidney Smith Hall"
-                    },
-                    "geometry": {
-                        "coordinates": [
-                            -79.39865237301687,
-                            43.662343395037766
-                        ],
-                        "type": "Point"
-                    }
-                }
-            ]
-        }
+        data: 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/buildings.geojson/wk5-data/buildings.geojson' // Your URL to your buildings.geojson file
     });
-    // Visualize data layer on map
     map.addLayer({
-        'id': 'uoft-pnt',
+        'id': 'buildings-point',
         'type': 'circle',
-        'source': 'uoft-data',
+        'source': 'buildings-data',
         'paint': {
-            'circle-radius': 6,
-            'circle-color': '#B42222'
+            'circle-radius': 5,
+            'circle-color': '#007cbf'
         }
     });
 });
