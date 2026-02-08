@@ -8,17 +8,31 @@ const map = new mapboxgl.Map({
 });
 
 map.on('load', () => {
+    map.addSource('census_tracts', {
+        'type': 'vector',
+        'url': 'mapbox://pau-victo.ar635fvc'
+    });
+    map.addLayer({
+        'id': 'Toronto_censustracts_outlines', 
+        'type': 'line',
+        'source': 'census_tracts', 
+        'paint': {
+            'line-color': '#0f118f', 
+            'line-width': 2
+        },
+        'source-layer': 'torontoct-98sxd6'
+});
     map.addSource('buildings-data', {
         type: 'geojson',
         data: 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/buildings.geojson/wk5-data/buildings.geojson' // Your URL to your buildings.geojson file
     });
-    map.addLayer({
-        'id': 'buildings-point',
-        'type': 'circle',
-        'source': 'buildings-data',
-        'paint': {
-            'circle-radius': 5,
-            'circle-color': '#007cbf'
-        }
-    });
+map.addLayer({
+    'id': 'buildings-point',
+    'type': 'circle',
+    'source': 'buildings-data',
+    'paint': {
+        'circle-radius': 5,
+        'circle-color': '#0f118f'
+    }
+});
 });
