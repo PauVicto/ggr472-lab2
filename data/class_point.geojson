@@ -1,1 +1,20 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Name":"Sidney Smith Hall","Address":"100 Saint George Street, Toronto, Ontario M5S 3G3, Canada"},"geometry":{"coordinates":[-79.39827021676975,43.66231288067041],"type":"Point"},"id":0}]}
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Sidney Smith Hall",
+                "Address": "100 Saint George Street, Toronto, Ontario M5S 3G3, Canada"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39827021676975,
+                    43.66231288067041
+                ],
+                "type": "Point"
+            },
+            "id": 0
+        }
+    ]
+}

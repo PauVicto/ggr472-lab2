@@ -92,5 +92,17 @@ map.on('load', () => {
             'icon-allow-overlap': true
         },
     });
-});
-
+    map.addSource('class_point', {
+        'type': 'geojson',
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/class_point.geojson'
+    });
+    map.addLayer({
+        'id': 'class_point',
+        'type': 'symbol',
+        'source': 'class_point',
+        'layout': {
+            'icon-image': 'building',
+            'icon-size': 1.3,
+            'icon-allow-overlap': true
+        }
+    });
