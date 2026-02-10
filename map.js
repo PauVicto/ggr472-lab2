@@ -61,7 +61,7 @@ map.on('load', () => {
         'source': 'picnic_polygon',
         'paint': {
             'fill-color': '#60ce21',
-            'fill-opacity': 0.3
+            'fill-opacity': 0.4
         }
     });
     map.addSource('cafe_along_route', {
