@@ -22,15 +22,12 @@ map.on('load', () => {
         },
         'source-layer': 'ttc-subway-shapefile-wgs84-1sh8u5'
     });
-
-    map.addSource()
-
     map.addSource('Day_Routes', {
         'type': 'geojson',
-        'data': 'data/Day_Routes.geojson'
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/Day_Routes.geojson'
     });
     map.addLayer({
-        'id': 'day_routes',
+        'id': '0',
         'type': 'line', 
         'source': 'Day_Routes',
         'paint': {
@@ -38,4 +35,13 @@ map.on('load', () => {
             'line-width': 2
         }
     });
-
+    map.addLayer({
+        'id': '1',
+        'type': 'line', 
+        'source': 'Day_Routes',
+        'paint': {
+            'line-color': '#00ff00',
+            'line-width': 2
+        }
+    });
+});
