@@ -2,7 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGF1LXZpY3RvIiwiYSI6ImNta2Rib2s1bTA5d2MzZW9va
 
 const map = new mapboxgl.Map({
     container: 'my-map',
-    style: 'mmapbox://styles/pau-victo/cmldhwais00d401qq1p97ayx5',
+    style: 'mapbox://styles/pau-victo/cmldhwais00d401qq1p97ayx5',
     center: [-79.39706250309841, 43.651631049876336],
     zoom: 13.5,
 });
@@ -33,8 +33,8 @@ map.on('load', () => {
         'type': 'line',
         'source': 'route_before_class',
         'paint': {
-            'line-color': '#b25fe9',
-            'line-width': 2
+            'line-color': '#ce85ff',
+            'line-width': 3
         }
     });
 
@@ -47,8 +47,8 @@ map.on('load', () => {
         'type': 'line',
         'source': 'route_after_class',
         'paint': {
-            'line-color': '#fd79ec',
-            'line-width': 2
+            'line-color': '#ff92ed',
+            'line-width': 3
         }
     });
     map.addSource('picnic_polygon', {
@@ -60,9 +60,12 @@ map.on('load', () => {
         'type': 'fill',
         'source': 'picnic_polygon',
         'paint': {
-            'fill-color': '#4fd600',
+            'fill-color': '#a3f375',
             'fill-opacity': 0.3
         }
     });
+    map.addSource('cafes_along_route', {
+
+    });    
 });
 
