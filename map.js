@@ -89,8 +89,10 @@ map.on('load', () => {
         'layout': {
             'icon-image': 'star',
             'icon-size': 1.3,
-            'icon-allow-overlap': true
-        },
+            'icon-allow-overlap': true,
+            'icon-color': '#ff0000'
+        }
+        });
     });
     map.addSource('class_point', {
         'type': 'geojson',
