@@ -24,24 +24,26 @@ map.on('load', () => {
     });
     map.addSource('Day_Routes', {
         'type': 'geojson',
-        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/Day_Routes.geojson'
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/day_route.geojson'
     });
     map.addLayer({
-        'id': '0',
+        'id': 'route_before',
         'type': 'line', 
         'source': 'Day_Routes',
         'paint': {
             'line-color': '#ff0000',
             'line-width': 2
+            'filter': ['==', ['get', 'route_type'], 'before_class']
         }
     });
     map.addLayer({
-        'id': '1',
+        'id': 'route_after',
         'type': 'line', 
         'source': 'Day_Routes',
         'paint': {
             'line-color': '#00ff00',
-            'line-width': 2
+            'line-width': 2,
+            'filter': ['==', ['get', 'route_type'], 'after_class']
         }
     });
 });
