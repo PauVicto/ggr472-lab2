@@ -1,29 +1,8 @@
-// Retrieve button, image, and text display elements
-const yesButton = document.getElementById("btn-pet");
-const petsCountDisplay = document.getElementById("count-pets");
-const catImage = document.getElementById("cat-image");
+mapboxql.accessToken='pk.eyJ1IjoicGF1LXZpY3RvIiwiYSI6ImNta2Rib2s1bTA5d2MzZW9vaGF2a3hrczkifQ.ie1nrw6qR60q70TUdf5B_w';
 
-// Initialize count variable and which cat image shows
-let countPets = 0;
-let showingPetting = false;
-
-// Image file paths
-const catStill = "data/cat.png";
-const catPetting = "data/petting-cat.png";
-
-// Use event listener to track button clicks from example JS LAB 1
-yesButton.addEventListener("click", () => {
-  countPets++;
-  petsCountDisplay.innerHTML = countPets;
-
-  // Switching image from each click
-  showingPetting = !showingPetting;
-
-  if (showingPetting) {
-    catImage.src = catPetting;
-    catImage.alt = "Hand petting a cat";
-  } else {
-    catImage.src = catStill;
-    catImage.alt = "Cat";
-  }
+const map=new mapboxgl.Map({
+    container:'my-map',
+    style: 'mapbox://styles/pau-victo/cml2sozh7000t01qmfjky3hs7',
+    center: [-79.39865, 43.66234],
+    zoom: 12,
 });
