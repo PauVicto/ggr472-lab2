@@ -17,7 +17,7 @@ map.on('load', () => {
         'type': 'line',
         'source': 'ttc_subway',
         'paint': {
-            'line-color': '#7e80f7',
+            'line-color': '#555555',
             'line-width': 1.3,
             'opacity': 0.4
         },
@@ -33,7 +33,7 @@ map.on('load', () => {
         'type': 'line',
         'source': 'route_before_class',
         'paint': {
-            'line-color': '#ce85ff',
+            'line-color': '#1f3a5f',
             'line-width': 3
         }
     });
@@ -47,7 +47,7 @@ map.on('load', () => {
         'type': 'line',
         'source': 'route_after_class',
         'paint': {
-            'line-color': '#ff92ed',
+            'line-color': '#6fa8dc',
             'line-width': 3
         }
     });
@@ -60,7 +60,7 @@ map.on('load', () => {
         'type': 'fill',
         'source': 'picnic_polygon',
         'paint': {
-            'fill-color': '#a3f375',
+            'fill-color': '#60ce21',
             'fill-opacity': 0.3
         }
     });
@@ -74,7 +74,7 @@ map.on('load', () => {
         'source': 'cafe_along_route',
         'layout': {
             'icon-image': 'cafe',
-            'icon-size': 1.3,
+            'icon-size': 1.1,
             'icon-allow-overlap': true
         }
     });
@@ -102,7 +102,7 @@ map.on('load', () => {
         'source': 'class_point',
         'layout': {
             'icon-image': 'building',
-            'icon-size': 1.3,
+            'icon-size': 1.5,
             'icon-allow-overlap': true
         }
     });
