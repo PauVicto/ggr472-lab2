@@ -64,8 +64,19 @@ map.on('load', () => {
             'fill-opacity': 0.3
         }
     });
-    map.addSource('cafes_along_route', {
-
+    map.addSource('cafes_along_route', { 
+        'type': 'geojson',
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/cafes_along_route.geojson'     
+    });
+    map.addLayer({
+        'id': 'cafes_along_route',
+        'type': 'symbol',
+        'source': 'cafes_along_route',
+        'layout': {
+            'icon-image': 'cafe',
+            'icon-size': 1.5,
+            'icon-allow-overlap': true
+        }
     });    
 });
 
