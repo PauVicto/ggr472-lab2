@@ -1,6 +1,2 @@
-.map-container {
-    Position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
+body {background-color: rgb(255, 215, 250);}
+.heading {color: rgb(0, 0, 0);}

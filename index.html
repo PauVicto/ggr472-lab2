@@ -1,16 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first web map</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="my-map" class="map-container"></div>
-    <script src="script.js"></script>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is My Webpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--BOOTSTRAP 5.3.8 NAVBAR CODE-->
+  <nav class="navbar bg-transparent">
+    <!--Added in transparent so the navbar blends to the background-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Vic's Full Course Schedule
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="data/Vic's timetable.pdf">2026 Winter Timetable</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Base Map
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="basemap.html">Vic's favorite Cafes/Parks & Classes(in red)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!--END OF BOOTSTRAP CODE-->
+
+  <!--CAT GIF Add-in and Title styling-->
+  <h1 style="color: rgb(5, 5, 5); text-align: center;">Vic's Comfy Study and Picnic Spots and Courses</h1>
+  <div class="text-center"><img src="data/cat_gif.gif" alt="GIF"></div> <!--END OF CAT GIF and TITLE-->
+
+  <!--CONTAINER WITH BUTTONS AND EXTERNAL LINK-->
+  <div class="container">
+    <div class="heading">
+      <h2 class="text-center">Come visit Vic's favorite places & see her schedule!</h2>
+    </div>
+    <div class="row justify-content-center text-center mt-3">
+      <!--"justify-content-center text-center" is found in Bootstrap Utilities under 
+        'flex' to center the buttons with the rest of the page-->
+      <div class="col-md-6">
+        <a class="btn btn-primary" href="map.html"> Vic's favorite spots and classes (mapbox)</a>
+      </div>
+      </div>
+      <p><a target="_blank"
+          href="https://www.blogto.com/eat_drink/2016/03/the_top_30_cafes_for_studying_in_toronto_by_neighbourhood/">More
+          study spots to visit in the future</a></p>
+    </div>
+
+    <!--CAT BUTTON INITIALIZING BEGIN, including stylizing-->
+    <div class="row justify-content-center text-center">
+      <div class="col-md-4">
+        <button type="button" class="btn btn-primary; bg-white;" id="btn-pet">Click to Pet! =>✋😺</button>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center">
+      <img id="cat-image" class="cat" src="data/cat.png" alt="Cat" style="width: 6%; height: 6%">
+    </div>
+  </div>
+  <div class="row text-center">
+    <p>Total pets:
+      <span id="count-pets">0</span>
+  </div> <!--CAT BUTTON SECTION ENDS-->
+
+  </div> <!--END OF CONTAINER-->
+  <script src="Script.js"></script>
 </body>
+
 </html>
