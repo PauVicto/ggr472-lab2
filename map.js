@@ -64,9 +64,9 @@ map.on('load', () => {
             'fill-opacity': 0.3
         }
     });
-    map.addSource('cafe_along_route', { 
+    map.addSource('cafe_along_route', {
         'type': 'geojson',
-        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/cafe_along_route.geojson'     
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/cafe_along_route.geojson'
     });
     map.addLayer({
         'id': 'cafe_along_route',
@@ -77,7 +77,7 @@ map.on('load', () => {
             'icon-size': 1.3,
             'icon-allow-overlap': true
         }
-    });  
+    });
     map.addSource('home_point', {
         'type': 'geojson',
         'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/home_point.geojson'
@@ -87,10 +87,10 @@ map.on('load', () => {
         'type': 'symbol',
         'source': 'home_point',
         'layout': {
-            'icon-image': 'home',
+            'icon-image': 'star',
             'icon-size': 1.3,
             'icon-allow-overlap': true
-        }
-    });  
+        },
+    });
 });
 
