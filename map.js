@@ -17,31 +17,40 @@ map.on('load', () => {
         'type': 'line',
         'source': 'ttc_subway',
         'paint': {
-            'line-color': '#2f31b1',
-            'line-width': 1.5
+            'line-color': '#7e80f7',
+            'line-width': 1.3,  
+            'opacity': 0.4
         },
         'source-layer': 'ttc-subway-shapefile-wgs84-1sh8u5'
     });
-    map.addSource('Day_Routes', {
+
+    map.addSource('route_before_class', {
         'type': 'geojson',
-        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/Day_Routes.geojson'
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/route_before_class.geojson'
     });
     map.addLayer({
-        'id': 'route-before-class',
+        'id': 'route_before_class',
         'type': 'line', 
-        'source': 'Day_Routes',
+        'source': 'route_before_class',
         'paint': {
-            'line-color': '#ff0000',
+            'line-color': '#b25fe9',
             'line-width': 2
         }
     });
+
+    map.addSource('route_after_class', {
+        'type': 'geojson',
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/route_after_class.geojson'
+    });
     map.addLayer({
-        'id': 'route-after-class',
+        'id': 'route_after_class',
         'type': 'line', 
-        'source': 'Day_Routes',
+        'source': 'route_after_class',
         'paint': {
-            'line-color': '#00ff00',
+            'line-color': '#fd79ec',
             'line-width': 2
         }
     });
-});
+map.addSource
+ });
+
