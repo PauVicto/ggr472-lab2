@@ -77,6 +77,20 @@ map.on('load', () => {
             'icon-size': 1.3,
             'icon-allow-overlap': true
         }
-    });    
+    });  
+    map.addSource('home_point', {
+        'type': 'geojson',
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/home_point.geojson'
+    });
+    map.addLayer({
+        'id': 'home_point',
+        'type': 'symbol',
+        'source': 'home_point',
+        'layout': {
+            'icon-image': 'home',
+            'icon-size': 1.3,
+            'icon-allow-overlap': true
+        }
+    });  
 });
 
