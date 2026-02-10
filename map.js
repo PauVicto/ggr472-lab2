@@ -2,7 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGF1LXZpY3RvIiwiYSI6ImNta2Rib2s1bTA5d2MzZW9va
 
 const map = new mapboxgl.Map({
     container: 'my-map',
-    style: 'mapbox://styles/pau-victo/cmldhwais00d401qq1p97ayx5',
+    style: 'mmapbox://styles/pau-victo/cmldhwais00d401qq1p97ayx5',
     center: [-79.39706250309841, 43.651631049876336],
     zoom: 13.5,
 });
@@ -18,7 +18,7 @@ map.on('load', () => {
         'source': 'ttc_subway',
         'paint': {
             'line-color': '#7e80f7',
-            'line-width': 1.3,  
+            'line-width': 1.3,
             'opacity': 0.4
         },
         'source-layer': 'ttc-subway-shapefile-wgs84-1sh8u5'
@@ -30,7 +30,7 @@ map.on('load', () => {
     });
     map.addLayer({
         'id': 'route_before_class',
-        'type': 'line', 
+        'type': 'line',
         'source': 'route_before_class',
         'paint': {
             'line-color': '#b25fe9',
@@ -44,13 +44,25 @@ map.on('load', () => {
     });
     map.addLayer({
         'id': 'route_after_class',
-        'type': 'line', 
+        'type': 'line',
         'source': 'route_after_class',
         'paint': {
             'line-color': '#fd79ec',
             'line-width': 2
         }
     });
-map.addSource
- });
+    map.addSource('picnic_polygon', {
+        'type': 'geojson',
+        'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/picnic_polygon.geojson'
+    });
+    map.addLayer({
+        'id': 'picnic_polygon',
+        'type': 'fill',
+        'source': 'picnic_polygon',
+        'paint': {
+            'fill-color': '#4fd600',
+            'fill-opacity': 0.3
+        }
+    });
+});
 
