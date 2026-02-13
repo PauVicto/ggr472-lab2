@@ -6,12 +6,12 @@ const map = new mapboxgl.Map({
     center: [-79.39471475781137, 43.65211471282889],
     zoom: 13.8,
 });
-//Found TTC subway lines shapefile from City of Toronto Open Data Portal and converted to vector tileset on Mapbox Studio//
+
+map.on('load', () => {
     map.addSource('ttc_subway', {
         'type': 'vector',
         'url': 'mapbox://pau-victo.b39znm2z'
     });
-    //Included opacity to make subway lines less of a priority and more of a distance reference//
     map.addLayer({
         'id': 'ttc_subway_lines',
         'type': 'line',
@@ -23,9 +23,7 @@ const map = new mapboxgl.Map({
         },
         'source-layer': 'ttc-subway-shapefile-wgs84-1sh8u5'
     });
-//End of subway lines layer//
 
-//Created GeoJSON linestring for Route before class; made different geoJSON files to change individual colors/symbols//
     map.addSource('route_before_class', {
         'type': 'geojson',
         'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/route_before_class.geojson'
@@ -39,9 +37,7 @@ const map = new mapboxgl.Map({
             'line-width': 3
         }
     });
-//End of route before class Layer//
 
-//Created GeoJSON linestring for Route after class//
     map.addSource('route_after_class', {
         'type': 'geojson',
         'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/route_after_class.geojson'
@@ -54,10 +50,7 @@ const map = new mapboxgl.Map({
             'line-color': '#6fa8dc',
             'line-width': 3
         }
- });
-//end of route after class Layer//
-
-//Added in GeoJSON files for picnic polygon, cafes along route, home point and class point As seperate files//
+    });
     map.addSource('picnic_polygon', {
         'type': 'geojson',
         'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/picnic_polygon.geojson'
@@ -75,7 +68,6 @@ const map = new mapboxgl.Map({
         'type': 'geojson',
         'data': 'https://raw.githubusercontent.com/PauVicto/ggr472-lab2/refs/heads/main/data/cafe_along_route.geojson'
     });
-    //Found symbol used also in styling editor mapbox, except done manually in JS code to add symbols//
     map.addLayer({
         'id': 'cafe_along_route',
         'type': 'symbol',
@@ -114,4 +106,4 @@ const map = new mapboxgl.Map({
             'icon-allow-overlap': true
         }
     });
-//End of geoJson layers for interactive webmap//
+});
